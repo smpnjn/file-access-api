@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>File Systems API</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Create and Write a New File</h2>        
+        <button id="someButton">Create a New File</button>
+        <textarea id="add-text" placeholder="Create a file before typing!" disabled></textarea>
+        <p>Once the file is created, as you type in this textarea, it will automatically save to your disc.</p>
+        <h2>Add New Files to a Directory</h2>
+        <div class="fl" style="margin: 0 0 2rem 0"><button id="addToFolder">Give access to folder</button></div>
+        <div id="folder-holder"><div id="folder-info"></div></div>
+        <div class="fl hidden" id="folder-info-add-new">
+            <p><strong>Now that we have access to the directory, click below to create a file inside of it.</strong></p>
+            <button id="addAFile" style="margin: 0 0 2rem 0">Create a New File</button>
+            <div id="file-message"></div>
+        </div>
+
+        <script src="local.js"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    background: rgb(10 13 37);
+    font-family: Inter, sans-serif;    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: white;
+    overflow-x: hidden;
+    margin: 2rem;
+}
+[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button {
+    background: linear-gradient(45deg,#1928de,#d65f5f);
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 100px;
+    white-space: nowrap;
+    height: auto;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all .1s ease-out;
+    font-variation-settings: "wght" 600;
+    letter-spacing: .5px;
+    display: block;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+}
+
+.hidden {
+    pointer-events: none;
+    opacity: 0;
+    height: 1px;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+textarea {
+    font-family: Inter, sans-serif;
+    padding: 0.5rem;
+    color: black;
+    background: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    border: none;
+    min-width: 500px;
+    height: 200px;
+    margin-top: 2rem;
+}
+#folder-info > div {
+    padding: 0.5rem;
+    background: rgba(255,255,255,0.05);
+    margin: 1rem 0;
+    border-radius: 10px;
+    color: rgba(255,255,255,0.75);
+}
+#file-message {
+    width: 100%;
+    float: left;
+    font-variation-settings: 'wght' 700;
+    margin: 0 0 2rem 0;
+    font-size: 1.125rem;
+}
